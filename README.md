@@ -134,4 +134,20 @@
         }
         robor.atirar();
     ]
+    *Criando mais Métodos*
+    º [Os métodos podem realizar qualquer operação que uma função realiza]
+    º *Exemplo*[
+        let pessoa = {
+            nome: "Rodrigo",
+            getNome: function(){
+                console.log("O nome é "+ this.nome);
+            },
+            setNome: funtion(novoNome){
+                this.nome = novoNome;
+            }
+        }
+        pessoa.getNome();
+        pessoa.setNome("Elizama");
+        pessoa.getNome();
+    ]
 }
