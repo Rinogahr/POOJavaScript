@@ -150,4 +150,50 @@
         pessoa.setNome("Elizama");
         pessoa.getNome();
     ]
+    *Objeto dentro de Objeto*
+    º [Como o objeto é também um tipo de dado, podemos ter objetos com objetos dentro]
+    º [Utilizando como um array associado, por exemplo]
+    º *Exemplo*[
+        let pessoa = {
+            nome: "Rodrigo",
+            caracteristicas: {
+                olhos: "castanhos",
+                cabelos: "castanhos ondulados",
+                brincos: false,
+                oculos: true,
+            }
+        }
+        console.log(pessoa.caracteristicas.cabelo);
+    ]
+    *Criando props e metodos em objs existentes*
+    º [O objeto não é imutável, ele pode gan har propriedades e métodos ao longo do código]
+    º *Exemplo*[
+        let pessoa = {
+            nome: "Rodrigo",
+        }
+        
+        pessoa.idade = 29;
+
+        pessoa.falar = function(){
+            console.log('Olá');
+        }
+
+        console.log(pessoa);
+    ]    
+    *Deletando propriedades e métodos*
+    º [Como é possível adicionar, também podemos deletar propriedades dos objetos]
+    º *Exemplo*[
+        let pessoa = {
+            nome: "Rodrigo",
+        }
+        
+        pessoa.idade = 29;
+
+        pessoa.falar = function(){
+            console.log('Olá');
+        }
+        delete pessoa.idade;
+        delete pessoa.falar;
+        console.log(pessoa);
+    ]
 }
