@@ -1,7 +1,10 @@
 let carro = {
-    protas: 4,
+    portas: 4,
     cor: "Preto"
 }
+
+console.log(carro.portas)
+console.log(carro['cor'])
 
 let pessoa = {
     nome: "Rodrigo"
